@@ -10,16 +10,16 @@
             <div class="mid">
                 <img src="../assets/nar-boss.png" />
                 <div class="mid-txt">
-                    <p class="pp1">NAROŻNIKI</p>
-                    <p class="pp2">POD</p>
-                    <p class="pp3">WYMIAR</p>
+                    <p style="font-weight: 300">NAROŻNIKI POD</p>
+                    <p style="font-weight: 500; line-height: 1vh">WYMIAR</p>
                 </div>
             </div>
-            <div class="mid2">
+            <router-link tag="div" class="mid2" to="/nasze-produkty">
                 <div class="mid2-txt">
                     <p>ZOBACZ WIĘCEJ</p>
+                    <i class="icon-right-1"></i>
                 </div>
-            </div>
+            </router-link>
         </div>
 
         <div class="aboutus">
@@ -81,20 +81,16 @@
         width: 45vw;
         padding: 2vh 0 0 2vw;
         float: left;
+        pointer-events: none;
     }
 
     .mid-txt {
         font-size: 1.9vw;
         float: left;
         width: 18vw;
-    }
-
-    .pp2 {
-        text-align: center;
-    }
-
-    .pp3 {
-        text-align: right;
+        margin: 9vh 0 0 4vw;
+        border-left: 1px solid black;
+        padding-left: 4vw;
     }
 
     .mid2 {
@@ -108,20 +104,31 @@
         clip-path: polygon(100% 70%, 0% 100%, 100% 100%);
         transition: .8s;
         text-align: right;
+        cursor: pointer;
+        color: #E4C68B;
     }
 
     .mid2-txt {
-        width: 20vw;
+        width: 40vw;
         height: 5vh;
-        margin: 35vh 0 0 30vw
+        margin: 31.7vh 0 0 51vw;
+        font-size: 2.3vh;
     }
 
     .mid2-txt p {
         width: 20vw;
+        float: left;
+    }
+
+    .mid2-txt i {
+        float: left;
+        padding-top: 2.4vh;
+        padding-left: 2vw;
     }
 
     .mid2:hover {
         background-color: #E4C68B;
+        color: white;
     }
 
 </style>
