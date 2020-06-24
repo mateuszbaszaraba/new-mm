@@ -21,5 +21,6 @@ export default {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
   }
 </style>

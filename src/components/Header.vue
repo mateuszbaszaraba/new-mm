@@ -15,9 +15,13 @@
 
 <style lang="scss">
     nav {
-        background-color: black;
         width: 100vw;
         height: 12vh;
+        position: absolute;
+        -webkit-user-select: none;  /* Chrome 49+ */
+        -moz-user-select: none;     /* Firefox 43+ */
+        -ms-user-select: none;      /* No support yet */
+        user-select: none;     
     }
     .logo {
         width: 20vw;
@@ -27,7 +31,7 @@
     .logo img {
         width: 6vw;
         height: auto;
-        margin: 1.8vh 0 0 1.8vw;
+        margin: 6vh 0 0 8vw;
     }
     .menu {
         width: 100vw;
@@ -38,11 +42,11 @@
         margin: 0;
         width: 60vw;
         float: right;
-        height: 12vh;
+        height: 20vh;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        margin-right: 4vw;
+        margin-right: 6vw;
     }
 
     ul > li {
