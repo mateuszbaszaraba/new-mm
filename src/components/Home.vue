@@ -10,8 +10,8 @@
             <div class="mid">
                 <img src="../assets/nar-boss.png" />
                 <div class="mid-txt">
-                    <p style="font-weight: 300">NAROŻNIKI POD</p>
-                    <p style="font-weight: 500; line-height: 1vh">WYMIAR</p>
+                    <p style="font-weight: 300; color: #5E5E5E">NAROŻNIKI POD</p>
+                    <p style="font-weight: 500; line-height: 1vh; color: #5E5E5E">WYMIAR</p>
                 </div>
             </div>
             <router-link tag="div" class="mid2" to="/nasze-produkty">
@@ -22,20 +22,44 @@
             </router-link>
         </div>
 
-        <div class="aboutus">
-            <p>dwad</p>
+        <div class="product">
+            <div class="product-txt">
+                <p class="productp1">NASZE PRODUKTY</p>
+                <p class="productp2">Nasza firma oferuje duży wachlarz produktów. Począwszy od kanapy, po fetele, aż do narożnika. 
+                    Nasi klienci mają możliwość wyboru tkaniny oraz jej koloru. Oprócz tego, nasze produkty można 
+                    zamawiać w ustalonym wymiarze. Każdy mebel w naszej kolekcji ma możliwość spania oraz pojemnik. 
+                    Oferujemy także dostawę do naszych klientów.</p>
+            </div>
         </div>
+
+        <div class="aboutus">
+            <div class="aboutus-txt">
+                <p class="aboutus1">O NAS</p>
+                <p class="aboutus2">Jesteśmy firmą działającą już od ponad prawie 17 lat. Przez ten okres opracowaliśmy
+                     najnowsze i najlepsze technologie w tworzeniu naszych produktów. Dzięki temu, mamy pewność, iż 
+                     nawet najbardziej wymagający klienci bedą zadowoleni. Przy wykonywaniu naszych produktów, używamy
+                      najwyższej jakości materiałów, sprężyn itd. Każdy klient jest inny, oraz potrzebuje czegoś innego. 
+                      Nasza firma zapewnia indywidualne podejście do każdego konsumenta.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="../assets/logo4.png" />
+            <div class="footer-txt">
+                MatMeble© Wszelkie prawa zastrzeżone
+            </div>
+        </div>
+
+        <app-footer></app-footer>
+
     </div>
 </template>
-
-<script>
-</script>
 
 <style lang="scss">
 
     .home {
         width: 100vw;
-        height: 200vh;
+        height: 260vh;
         background-color: #E8E8E8;
     }
 
@@ -89,7 +113,7 @@
         float: left;
         width: 18vw;
         margin: 9vh 0 0 4vw;
-        border-left: 1px solid black;
+        border-left: 1px solid #5E5E5E;
         padding-left: 4vw;
     }
 
@@ -129,6 +153,76 @@
     .mid2:hover {
         background-color: #E4C68B;
         color: white;
+    }
+
+    .product {
+        width: 100vw;
+        height: 60vh;
+        position: absolute;
+        margin-top: 30vh;
+    }
+
+    .product-txt {
+        width: 80vw;
+        height: 20vh;
+        // background-color: green;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 17vh;
+        text-align: center;
+    }
+
+    .productp1 {
+        color: #5E5E5E;
+        font-size: 2.4vw;
+    }
+
+    .productp2 {
+        color: #5E5E5E;
+        font-size: 1.5vw;
+    }
+
+    .aboutus {
+        width: 100vw;
+        height: 80vh;
+        position: absolute;
+        margin: 75vh 0 0 0;
+    }
+
+    .aboutus-txt {
+        width: 80vw;
+        height: 30vh;
+        margin-top: 17vh;
+        margin-left: 7vw;
+        margin-right: 7vw;
+        text-align: center;
+        background-color: white;
+        padding: 10vh 3vw 10vh 3vw;
+    }
+
+    .aboutus1 {
+        color: #5E5E5E;
+        font-size: 2.4vw;
+    }
+
+    .aboutus2 {
+        color: #5E5E5E;
+        font-size: 1.5vw;
+    }
+
+    .footer {
+        background-color: #000000;
+        margin-top: 140vh;
+        text-align: center;
+        height: 35vh;
+        color: white;
+        padding-top: 2vh
+    }
+
+    .footer img {
+        width: 6vw;
+        height: auto;
+        padding: 10vh 0 5vh 0;
     }
 
 </style>
