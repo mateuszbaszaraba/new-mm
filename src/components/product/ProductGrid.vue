@@ -5,15 +5,19 @@
             <p class="p3">WYSOKA JAKOŚĆ</p>
             <p class="p1"><span style="color: #E4C68B">INNOWACYJNE</span> TECHNOLOGIE</p>
         </div>
+
+        <app-products style="margin-top: 70vh; position: absolute"></app-products>
     </div>
 </template>
 
 <script>
     import header from '../Header';
+    import products from './Products';
 
     export default {
         components: {
-            appHeader: header
+            appHeader: header,
+            appProducts: products
         }
     }
 </script>

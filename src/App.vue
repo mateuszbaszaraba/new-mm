@@ -8,7 +8,9 @@
 
 
 export default {
-
+  created() {
+    this.$store.dispatch('initProducts')
+  }
 }
 
 </script>
