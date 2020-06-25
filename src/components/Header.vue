@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="logo">
-            <img src="../assets/logo4.png" />
+            <router-link to="/"><img src="../assets/logo4.png" /></router-link>
         </div>
         <div class="menu">
             <ul>
@@ -22,6 +22,7 @@
         -moz-user-select: none;     /* Firefox 43+ */
         -ms-user-select: none;      /* No support yet */
         user-select: none;     
+        padding-bottom: 7vh;
     }
     .logo {
         width: 20vw;

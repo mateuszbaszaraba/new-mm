@@ -1,5 +1,6 @@
 <template>
     <div class="home">
+        <app-header></app-header>
 
         <div class="first">
             <div class="first-txt">
@@ -44,16 +45,22 @@
         </div>
 
         <div class="footer">
-            <img src="../assets/logo4.png" />
+            <router-link to="/"><img src="../assets/logo4.png" /></router-link>
             <div class="footer-txt">
                 MatMeble© Wszelkie prawa zastrzeżone
             </div>
         </div>
 
-        <app-footer></app-footer>
-
     </div>
 </template>
+<script>
+import header from './Header'
+export default {
+    components: {
+        appHeader: header
+    }
+}
+</script>
 
 <style lang="scss">
 
