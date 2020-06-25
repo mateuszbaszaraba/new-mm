@@ -23,8 +23,12 @@
 
     .cont {
         width: 90vw;
-        height: 40vh;
+        height: 80vh;
         margin: 0 5vw 0 5vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
 </style>
