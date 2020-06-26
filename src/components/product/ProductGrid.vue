@@ -7,6 +7,13 @@
         </div>
 
         <app-products style="margin-top: 70vh; position: absolute"></app-products>
+
+        <div class="footer2">
+            <router-link to="/"><img src="../../assets/logo4.png" /></router-link>
+            <div class="footer-txt2">
+                MatMeble© Wszelkie prawa zastrzeżone
+            </div>
+        </div>
     </div>
 </template>
 
@@ -25,7 +32,7 @@
 <style lang="scss">
     .productgrid {
         width: 100vw;
-        height: 600vh;
+        height: 555vh;
         background-color: #E8E8E8;
     }
 
@@ -46,5 +53,22 @@
     .p1 {
         // font-size: 5vh
         font-size: 3vw;
+    }
+
+    .footer2 {
+        background-color: #000000;
+        margin-top: 520vh;
+        text-align: center;
+        height: 35vh;
+        color: white;
+        padding-top: 2vh;
+        position: absolute;
+        width: 100vw;
+    }
+
+    .footer2 img {
+        width: 6vw;
+        height: auto;
+        padding: 10vh 0 5vh 0;
     }
 </style>
