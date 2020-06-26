@@ -28,7 +28,7 @@
         width: 25vw;
         height: 40vh;
         background-color: white;
-        margin: 1vh 0 2vh 0;
+        margin: 2vh 0 2vh 0;
         cursor: pointer;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         position: relative;
