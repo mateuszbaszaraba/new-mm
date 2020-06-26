@@ -1,10 +1,10 @@
 <template>
     <div class="prod-ac">
-        <router-link class="prod-cont" tag="div" :to="'/nasze-produkty' + product.id">
+        <router-link class="prod-cont" tag="div" :to="'/nasze-produkty/' + product.id">
             <img :style="myStyle(product.id)" :src="getImgUrl(product.id)" />
         </router-link>
 
-        <router-link class="prod-cont-txt" tag="div" :to="'/nasze-produkty' + product.id">
+        <router-link class="prod-cont-txt" tag="div" :to="'/nasze-produkty/' + product.id">
             <p>{{ product.name }} <i class="icon-right-1"></i></p>
         </router-link>
     </div>
