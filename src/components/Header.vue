@@ -59,7 +59,7 @@
         margin-right: 1vw;
         cursor: pointer;
         padding: 3vh 2vw 3vh 2vw;
-        transition: .5s;
+        transition: .8s;
     }
     .active {
         color: #E4C68B;

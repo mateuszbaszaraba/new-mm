@@ -59,7 +59,7 @@
         margin-top: -42.1vh;
         position: absolute;
         cursor: pointer;
-        transition: .8s;
+        transition: .5s;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;

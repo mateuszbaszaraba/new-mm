@@ -42,7 +42,7 @@
         color: #5E5E5E;
         text-align: center;
         position: absolute;
-        margin: 32vh 20vw 12vh 20vw
+        margin: 33vh 20vw 12vh 20vw
     }
 
     .p3 {
