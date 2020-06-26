@@ -1,7 +1,7 @@
 <template>
     <div class="prod-ac">
         <router-link class="prod-cont" tag="div" :to="'/nasze-produkty' + product.id">
-            <img :src="getImgUrl(product.id)" />
+            <img :style="myStyle(product.id)" :src="getImgUrl(product.id)" />
         </router-link>
 
         <router-link class="prod-cont-txt" tag="div" :to="'/nasze-produkty' + product.id">
@@ -14,11 +14,23 @@
 <script>
     export default {
       props: ['product'],
+      data() {
+          return {
+              diff: false
+          }
+      },
       methods: {
           getImgUrl(pic) {
               return require('../../assets/furn/prod' + pic + '.png')
+          },
+          myStyle(index) {
+              if(index > 23) {
+                  return 'margin-top: -2vh'
+              } else {
+                  return 'margin-top: 6.6vh'
+              }
           }
-      }
+      },
     }
 </script>
 

@@ -24,6 +24,7 @@ export default [
     { id: 23, name: 'Pufa', dim1: 'Dowolny'},
     { id: 24, name: 'Fotel Fiński Pasek', dim1: '0,65m'},
     { id: 25, name: 'Fotel Fiński', dim1: '0,65m'},
-    { id: 26, name: 'Pufa Z Oparciem', dim1: '0,65m'},
-    { id: 27, name: 'Fotel Muszelka', dim1: '0,90m'},
+    { id: 26, name: 'Fotel Niklowany', dim1: '0,65m'},
+    { id: 27, name: 'Pufa Z Oparciem', dim1: '0,65m'},
+    { id: 28, name: 'Fotel Muszelka', dim1: '0,90m'},
 ]

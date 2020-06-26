@@ -25,7 +25,7 @@
 <style lang="scss">
     .productgrid {
         width: 100vw;
-        height: 200vh;
+        height: 600vh;
         background-color: #E8E8E8;
     }
 
