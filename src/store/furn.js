@@ -17,17 +17,8 @@ const actions = {
 };
 
 const getters = {
-    products: state => {
+    allFurniture: state => {
         return state.products
-    },
-    furnDetail(state, index) {
-        const record = state.products.find(element => element.id == index);
-        return {
-            id: index,
-            name: record.name,
-            dim1: record.dim1,
-            dim2: record.dim2
-        }
     }
 };
 

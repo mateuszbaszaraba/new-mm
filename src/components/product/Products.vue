@@ -13,7 +13,7 @@
         },
         computed: {
             productss() {
-                return this.$store.getters.products
+                return this.$store.getters.allFurniture
             }
         }
     }
