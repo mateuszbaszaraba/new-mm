@@ -100,6 +100,7 @@
         position: absolute;
         margin-top: 120vh;
         width: 100vw;
+        color: #5E5E5E;
     }
 
     .footer3 {
