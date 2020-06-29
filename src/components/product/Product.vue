@@ -1,4 +1,5 @@
 <template>
+<transition name="slideup" appear>
     <div class="prod-ac">
         <router-link class="prod-cont" tag="div" :to="'/nasze-produkty/' + product.id">
             <img :style="myStyle(product.id)" :src="getImgUrl(product.id)" />
@@ -8,7 +9,7 @@
             <p>{{ product.name }} <i class="icon-right-1"></i></p>
         </router-link>
     </div>
-
+</transition>
 </template>
 
 <script>
@@ -35,6 +36,39 @@
 </script>
 
 <style lang="scss">
+
+    .slideup-enter {
+        opacity: 0;
+    }
+
+    .slideup-enter-active {
+        animation: slideup-in 1s ease-out forwards;
+        transition: opacity 1s;
+    }
+
+    .slideup-leave-active {
+        animation: slideup-out 1s ease-out forwards;
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    @keyframes slideup-in {
+        from {
+            transform: translateY(20vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideup-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(20vh);
+        }
+    }
 
     .prod-cont {
         width: 25vw;

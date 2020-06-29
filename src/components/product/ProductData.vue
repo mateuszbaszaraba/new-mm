@@ -1,4 +1,5 @@
 <template>
+<transition name="slideup" appear>
     <div class="prod-data">
         <img :src="getImgUrl(loadedProd.id)" class="imgPD" />
         <div class="prod-data-txt">
@@ -7,6 +8,7 @@
             <p class="dp2">Powierzchnia Spania: {{ loadedProd.dim2 }}</p>
         </div>
     </div>
+</transition>
 </template>
 
 <script>
@@ -23,6 +25,39 @@ export default {
 </script>
 
 <style lang="scss">
+
+    .slideup-enter {
+        opacity: 0;
+    }
+
+    .slideup-enter-active {
+        animation: slideup-in 1s ease-out forwards;
+        transition: opacity 1s;
+    }
+
+    .slideup-leave-active {
+        animation: slideup-out 1s ease-out forwards;
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    @keyframes slideup-in {
+        from {
+            transform: translateY(20vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideup-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(20vh);
+        }
+    }
 
     .prod-data {
         width: 90vw;

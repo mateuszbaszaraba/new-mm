@@ -1,26 +1,36 @@
 <template>
     <div class="home">
+        
         <app-header></app-header>
 
         <div class="first">
-            <div class="first-txt">
-                <p class="p3">WYSOKA JAKOŚĆ</p>
-                <p class="p1"><span style="color: #E4C68B">INNOWACYJNE</span> TECHNOLOGIE</p>
-            </div>
 
-            <div class="mid">
-                <img src="../assets/nar-boss.png" />
-                <div class="mid-txt">
-                    <p style="font-weight: 300; color: #5E5E5E">NAROŻNIKI POD</p>
-                    <p style="font-weight: 500; line-height: 1vh; color: #5E5E5E">WYMIAR</p>
+            <transition name="fade" appear>
+                <div class="first-txt">
+                    <p class="p3">WYSOKA JAKOŚĆ</p>
+                    <p class="p1"><span style="color: #E4C68B">INNOWACYJNE</span> TECHNOLOGIE</p>
                 </div>
-            </div>
-            <router-link tag="div" class="mid2" to="/nasze-produkty">
-                <div class="mid2-txt">
-                    <p>ZOBACZ WIĘCEJ</p>
-                    <i class="icon-right-1"></i>
+            </transition>
+
+            <transition name="slideup" appear>
+                <div class="mid">
+                    <img src="../assets/nar-boss.png" />
+                    <div class="mid-txt">
+                        <p style="font-weight: 300; color: #5E5E5E">NAROŻNIKI POD</p>
+                        <p style="font-weight: 500; line-height: 1vh; color: #5E5E5E">WYMIAR</p>
+                    </div>
                 </div>
-            </router-link>
+            </transition>
+
+            <transition name="slideright" appear>
+                <router-link tag="div" class="mid2" to="/nasze-produkty">
+                    <div class="mid2-txt">
+                        <p>ZOBACZ WIĘCEJ</p>
+                        <i class="icon-right-1"></i>
+                    </div>
+                </router-link>
+            </transition>
+
         </div>
 
         <div class="product">
@@ -63,6 +73,85 @@ export default {
 </script>
 
 <style lang="scss">
+
+    .fade-enter {
+        opacity: 0
+    }
+
+    .fade-enter-active {
+        transition: opacity 1s;
+    }
+
+    .fade-leave-active {
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    .slideup-enter {
+        opacity: 0;
+    }
+
+    .slideup-enter-active {
+        animation: slideup-in 1s ease-out forwards;
+        transition: opacity .5s;
+    }
+
+    .slideup-leave-active {
+        animation: slideup-out 1s ease-out forwards;
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    @keyframes slideup-in {
+        from {
+            transform: translateY(20vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideup-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(20vh);
+        }
+    }
+
+    .slideright-enter {
+        opacity: 0;
+    }
+
+    .slideright-enter-active {
+        animation: slideright-in 1s ease-out forwards;
+        transition: opacity .5s;
+    }
+
+    .slideup-leave-active {
+        animation: slideright-out 1s ease-out forwards;
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    @keyframes slideright-in {
+        from {
+            transform: translateX(20vw);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slideright-out {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(20vw);
+        }
+    }
 
     .home {
         width: 100vw;

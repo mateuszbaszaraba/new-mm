@@ -3,24 +3,28 @@
     <div class="contact">
         <app-header style="background-color: black"></app-header>
 
-        <div class="wdf">
-            <div class="wdf-txt">
-                <p class="c1">GDZIE MOŻNA NAS ZNALEŹĆ</p>
-                <p class="c2"><b>SOBOTA</b> - TARGOWISKO DZIAŁOSZYN</p>
-                <p class="c2"><b>NIEDZIELA</b> - GIEŁDA TOWAROWA W CZĘSTOCHOWIE (STADION CKM WŁÓKNIARZ)</p>
+        <transition name="slideup" appear>
+            <div class="wdf">
+                <div class="wdf-txt">
+                    <p class="c1">GDZIE MOŻNA NAS ZNALEŹĆ</p>
+                    <p class="c2"><b>SOBOTA</b> - TARGOWISKO DZIAŁOSZYN</p>
+                    <p class="c2"><b>NIEDZIELA</b> - GIEŁDA TOWAROWA W CZĘSTOCHOWIE (STADION CKM WŁÓKNIARZ)</p>
+                </div>
             </div>
-        </div>
+        </transition>
 
-        <div class="info">
-            <div class="info-txt">
-                <p class="c1">DANE KONTAKTOWE</p>
-                <p class="c2">Marcin Baszaraba</p>
-                <p class="c2">ul. Parkowa 11</p>
-                <p class="c2">Wierzchowisko, 42-233 Mykanów</p>
-                <p class="c2">Nr. Tel.: 604-381-612</p>
-                <p class="c2">Email: matmeble@onet.eu</p>
+        <transition name="slideup" appear>
+            <div class="info">
+                <div class="info-txt">
+                    <p class="c1">DANE KONTAKTOWE</p>
+                    <p class="c2">Marcin Baszaraba</p>
+                    <p class="c2">ul. Parkowa 11</p>
+                    <p class="c2">Wierzchowisko, 42-233 Mykanów</p>
+                    <p class="c2">Nr. Tel.: 604-381-612</p>
+                    <p class="c2">Email: matmeble@onet.eu</p>
+                </div>
             </div>
-        </div>
+        </transition>
 
         <div class="map">
             <div class="map-txt">
@@ -58,6 +62,39 @@
 </script>
 
 <style lang="scss">
+
+    .slideup-enter {
+        opacity: 0;
+    }
+
+    .slideup-enter-active {
+        animation: slideup-in 1s ease-out forwards;
+        transition: opacity 1s;
+    }
+
+    .slideup-leave-active {
+        animation: slideup-out 1s ease-out forwards;
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    @keyframes slideup-in {
+        from {
+            transform: translateY(20vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideup-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(20vh);
+        }
+    }
 
     .c2 {
         // font-size: 3.8vh

@@ -1,4 +1,5 @@
 <template>
+<transition name="slidedown" appear>
     <nav>
         <div class="logo">
             <router-link to="/"><img src="../assets/logo4.png" /></router-link>
@@ -11,9 +12,37 @@
             </ul>
         </div>
     </nav>
+</transition>
 </template>
 
 <style lang="scss">
+
+    .slidedown-enter-active {
+        animation: slidedown-in .5s ease-out forwards;
+    }
+
+    .slidedown-leave-active {
+        animation: slidedown-out .5s ease-out forwards;
+    }
+
+    @keyframes slidedown-in {
+        from {
+            transform: translateY(-4vh);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slidedown-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-4vh);
+        }
+    }
+
     nav {
         width: 100vw;
         height: 12vh;

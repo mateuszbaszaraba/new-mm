@@ -1,10 +1,14 @@
 <template>
     <div class="productgrid">
+
         <app-header style="background-color: black"></app-header>
-        <div class="productgrid-txt">
-            <p class="p3">WYSOKA JAKOŚĆ</p>
-            <p class="p1"><span style="color: #E4C68B">INNOWACYJNE</span> TECHNOLOGIE</p>
-        </div>
+
+        <transition name="fade" appear>
+            <div class="productgrid-txt">
+                <p class="p3">WYSOKA JAKOŚĆ</p>
+                <p class="p1"><span style="color: #E4C68B">INNOWACYJNE</span> TECHNOLOGIE</p>
+            </div>
+        </transition>
 
         <app-products style="margin-top: 70vh; position: absolute"></app-products>
 
@@ -30,6 +34,20 @@
 </script>
 
 <style lang="scss">
+
+    .fade-enter {
+        opacity: 0
+    }
+
+    .fade-enter-active {
+        transition: opacity 1s;
+    }
+
+    .fade-leave-active {
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
     .productgrid {
         width: 100vw;
         height: 555vh;
