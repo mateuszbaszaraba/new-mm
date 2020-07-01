@@ -329,13 +329,35 @@ export default {
         display: none;
     }
 
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 700px) {
         .not-display {
             display: none;
         }
 
         .display {
             display: block;
+        }
+
+        .p3 {
+            // font-size: 3.8vh
+            font-size: 4.5vw;
+        }
+
+        .p1 {
+            // font-size: 5vh
+            font-size: 5vw;
+        }
+
+        .first-txt {
+            z-index: 8;
+        }
+
+        .mid {
+            z-index: 8;
+        }
+
+        .mid2 {
+            z-index: 8;
         }
     }
 
