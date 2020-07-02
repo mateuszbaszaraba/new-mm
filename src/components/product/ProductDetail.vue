@@ -88,6 +88,10 @@
             display: none;
         }
 
+        .display {
+            display: block;
+        }
+
         .footer4 {
             margin-top: 100vh;
         }

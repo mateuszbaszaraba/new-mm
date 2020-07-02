@@ -359,6 +359,76 @@ export default {
         .mid2 {
             z-index: 8;
         }
+
+        .mid img {
+            padding: 11vh 0 0 2vw;
+        }
+
+        .mid-txt {
+            font-size: 3vw;
+            margin: 11.5vh 0 0 4vw;
+        }
+
+        .mid2-txt {
+            width: 40vw;
+            margin: 32.4vh 0 0 46vw;
+            font-size: 2.3vh;
+        }
+
+        .mid2-txt p {
+            width: 25vw;
+            float: left;
+        }
+
+        .productp1 {
+            color: #5E5E5E;
+            font-size: 5vw;
+        }
+
+        .productp2 {
+            color: #5E5E5E;
+            font-size: 3vw;
+        }
+
+        .aboutus1 {
+            color: #5E5E5E;
+            font-size: 5vw;
+        }
+
+        .aboutus2 {
+            color: #5E5E5E;
+            font-size: 3vw;
+        }
+
+        .product {
+            margin-top: 25vh;
+        }
+
+        .aboutus-txt {
+            width: 80vw;
+            height: 30vh;
+            margin-top: 17vh;
+            margin-left: 7vw;
+            margin-right: 7vw;
+            text-align: center;
+            background-color: white;
+            padding: 10vh 3vw 20vh 3vw;
+        }
+
+        .footer {
+            background-color: #000000;
+            margin-top: 150vh;
+            text-align: center;
+            height: 35vh;
+            color: white;
+            padding-top: 2vh
+        }
+
+        .footer img {
+            width: 10vw;
+            height: auto;
+            padding: 10vh 0 5vh 0;
+        }
     }
 
 </style>

@@ -6,7 +6,7 @@
         </router-link>
 
         <router-link class="prod-cont-txt" tag="div" :to="'/nasze-produkty/' + product.id">
-            <p>{{ product.name }} <i class="icon-right-1"></i></p>
+            <p style="color: #5E5E5E">{{ product.name }} <i class="icon-right-1"></i></p>
         </router-link>
     </div>
 </transition>
@@ -78,6 +78,7 @@
         cursor: pointer;
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         position: relative;
+        color: #5E5E5E
     }
 
     .prod-cont img {
