@@ -1,7 +1,8 @@
 <template>
 
     <div class="contact">
-        <app-header style="background-color: black"></app-header>
+        <app-header style="background-color: black" class="not-display"></app-header>
+        <app-mobile-header style="background-color: black" class="display"></app-mobile-header>
 
         <transition name="slideup" appear>
             <div class="wdf">
@@ -53,10 +54,12 @@
 
 <script>
     import header from './Header';
+    import mobileheader from './MobileHeader';
 
     export default {
         components: {
-            appHeader: header
+            appHeader: header,
+            appMobileHeader: mobileheader
         }
     }
 </script>
@@ -155,6 +158,20 @@
         width: 6vw;
         height: auto;
         padding: 10vh 0 5vh 0;
+    }
+
+    .display {
+        display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .not-display {
+            display: none;
+        }
+
+        .display {
+            display: block;
+        }
     }
 
 </style>

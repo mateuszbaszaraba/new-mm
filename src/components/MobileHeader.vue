@@ -1,5 +1,5 @@
 <template>
-    <div class="mob-header">
+    <div class="mob-header" :class="{bgblack: menuClose}">
         <router-link to="/"><img src="../assets/logo4.png"/></router-link>
         <div id="wrapper">
             <div class="main-item menu" :class="{close: menuClose}" @click="menuClose=!menuClose">
@@ -29,17 +29,21 @@ export default {
 </script>
 
 <style lang="scss">
+
+    .bgblack {
+        background-color: black;
+    }
+
     .mob-header {
         width: 100vw;
-        height: 10vh;
+        height: 14vh;
         position: absolute;
-        background-color: black;
     }
 
     .mob-header img {
         width: 15vw;
         float: left;
-        margin: 1.5vh 0 0 4vw;
+        margin: 3.5vh 0 0 7vw;
         max-width: 15vw;
     }
 
@@ -47,14 +51,14 @@ export default {
         display: inline-block;
         position: relative;
         cursor: pointer;
-        width: 81vw;
+        width: 78vw;
     }
 
     .main-item {
         width: 10vw;
         height: 8vh;
         position: relative;
-        margin: .9vh 0 0 60vw;
+        margin: 3.1vh 0 0 57vw;
     }
 
     .line {

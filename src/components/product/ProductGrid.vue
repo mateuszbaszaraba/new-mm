@@ -1,7 +1,8 @@
 <template>
     <div class="productgrid">
 
-        <app-header style="background-color: black"></app-header>
+        <app-header style="background-color: black" class="not-display"></app-header>
+        <app-mobile-header style="background-color: black" class="display"></app-mobile-header>
 
         <transition name="fade" appear>
             <div class="productgrid-txt">
@@ -24,11 +25,13 @@
 <script>
     import header from '../Header';
     import products from './Products';
+    import mobileheader from '../MobileHeader';
 
     export default {
         components: {
             appHeader: header,
-            appProducts: products
+            appProducts: products,
+            appMobileHeader: mobileheader
         }
     }
 </script>
@@ -88,5 +91,19 @@
         width: 6vw;
         height: auto;
         padding: 10vh 0 5vh 0;
+    }
+
+    .display {
+        display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .not-display {
+            display: none;
+        }
+
+        .display {
+            display: block;
+        }
     }
 </style>
