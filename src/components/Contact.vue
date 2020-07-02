@@ -110,7 +110,8 @@
     }
 
     .contact {
-        height: 220vh;
+        // height: 220vh;
+        height: 160vh;
         width: 100vw;
         background-color: #E8E8E8;
     }
@@ -141,11 +142,13 @@
         margin-top: 120vh;
         width: 100vw;
         color: #5E5E5E;
+        display: none;
     }
 
     .footer3 {
         background-color: #000000;
-        margin-top: 200vh;
+        // margin-top: 200vh;
+        margin-top: 130vh;
         text-align: center;
         height: 35vh;
         color: white;
@@ -189,7 +192,7 @@
         }
 
         .contact {
-            height: 230vh;
+            height: 160vh;
         }
 
         .info {
@@ -197,13 +200,17 @@
         }
 
         .footer3 {
-            margin-top: 220vh;
+            margin-top: 130vh;
         }
 
         .footer3 img {
             width: 10vw;
             height: auto;
             padding: 10vh 0 5vh 0;
+        }
+
+        .map {
+            display: none
         }
 
     }

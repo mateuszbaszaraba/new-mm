@@ -329,7 +329,7 @@ export default {
         display: none;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media screen and/*!YUI-Compressor */(max-width: 700px) {
         .not-display {
             display: none;
         }

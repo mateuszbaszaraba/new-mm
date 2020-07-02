@@ -83,7 +83,7 @@
         display: none;
     }
 
-    @media only screen and (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         .not-display {
             display: none;
         }
