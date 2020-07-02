@@ -1,6 +1,7 @@
 <template>
     <div class="prod-det">
-        <app-header style="background-color: black"></app-header>
+        <app-header style="background-color: black" class="not-display"></app-header>
+        <app-mobile-header style="background-color: black" class="display"></app-mobile-header>
 
         <app-productdata 
             style="margin-top: 30vh; position: absolute"
@@ -21,13 +22,15 @@
 
 <script>
     import header from '../Header';
+    import mobileheader from '../MobileHeader';
     import productdata from './ProductData';
     import {mapGetters} from 'vuex';
 
     export default {
         components: {
             appHeader: header,
-            appProductdata: productdata
+            appProductdata: productdata,
+            appMobileHeader: mobileheader
         },
         computed: {
             ...mapGetters(['allFurniture']),
@@ -74,6 +77,31 @@
         width: 6vw;
         height: auto;
         padding: 10vh 0 5vh 0;
+    }
+
+    .display {
+        display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .not-display {
+            display: none;
+        }
+
+        .footer4 {
+            margin-top: 100vh;
+        }
+
+        .prod-data-contact {
+            margin-top: 94vh;
+            font-size: 2.5vw;
+        }
+
+        .footer4 img {
+            width: 10vw;
+            height: auto;
+            padding: 10vh 0 5vh 0;
+        }
     }
 
 </style>

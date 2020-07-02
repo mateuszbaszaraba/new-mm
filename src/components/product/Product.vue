@@ -121,4 +121,20 @@
         margin-left: 0.3vw;
     }
 
+    @media only screen and (max-width: 700px) {
+    .prod-cont {
+        width: 80vw;
+        
+    }
+
+    .prod-cont img {
+        width: 50vw;
+    }
+
+    .prod-cont-txt {
+        width: 80vw;
+    }
+
+    }
+
 </style>

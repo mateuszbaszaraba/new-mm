@@ -105,5 +105,29 @@
         .display {
             display: block;
         }
+
+        .p3 {
+        // font-size: 3.8vh
+            font-size: 5.5vw;
+        }
+
+        .p1 {
+            // font-size: 5vh
+            font-size: 4.1vw;
+        }
+
+        .footer2 {
+            margin-top: 1310vh;
+        }
+
+        .productgrid {
+            height: 1330vh;
+        }
+
+        .footer2 img {
+            width: 10vw;
+            height: auto;
+            padding: 10vh 0 5vh 0;
+        }
     }
 </style>

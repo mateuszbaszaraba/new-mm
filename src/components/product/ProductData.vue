@@ -97,4 +97,19 @@ export default {
         font-size: 1.9vw
     }
 
+    @media only screen and (max-width: 700px) {
+    
+        .dp2 {
+            font-size: 3.5vw
+        }
+
+        .dp1 {
+            font-size: 4vw
+        }
+
+        .prod-data {
+            padding: 5vh 0 5vh 0;
+        }
+    }
+
 </style>

@@ -175,12 +175,12 @@
 
         .c2 {
         // font-size: 3.8vh
-            font-size: 3vw;
+            font-size: 2.8vw;
         }
 
         .c1 {
             // font-size: 5vh
-            font-size: 5vw;
+            font-size: 4.8vw;
         }
 
         .wdf {
