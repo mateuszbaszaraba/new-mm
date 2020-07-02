@@ -172,6 +172,40 @@
         .display {
             display: block;
         }
+
+        .c2 {
+        // font-size: 3.8vh
+            font-size: 3vw;
+        }
+
+        .c1 {
+            // font-size: 5vh
+            font-size: 5vw;
+        }
+
+        .wdf {
+            margin: 25vh 6vw 0 6vw;
+            padding: 3vh 4vw 4vh 4vw;
+        }
+
+        .contact {
+            height: 230vh;
+        }
+
+        .info {
+            margin: 70vh 0 0 0;
+        }
+
+        .footer3 {
+            margin-top: 220vh;
+        }
+
+        .footer3 img {
+            width: 10vw;
+            height: auto;
+            padding: 10vh 0 5vh 0;
+        }
+
     }
 
 </style>
